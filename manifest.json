@@ -1,17 +1,14 @@
 {
-    "name": "Pontomais Horas Faltantes",
-    "version": "1.0",
-    "description": "Veja as horas que faltam para o seu dia de trabalho.",
-    "browser_action": {
-      "default_icon": "images/icon.png",
-      "popup": "index.html"
-    },
-    "icons": {
-      "19": "images/icon.png",
-      "48": "images/icon.png",
-      "128": "images/icon.png"
-    },
-    "permissions": [
-      "activeTab"
-    ]
-  } 
+	"name": "Pontomais Horas Faltantes",
+	"manifest_version": 2,
+	"version": "1.0",
+	"description": "Veja as horas que faltam para o seu dia de trabalho.",
+	"content_scripts": [{
+		"matches": [
+			"https://app.pontomaisweb.com.br/*"
+		],
+		"js": [
+			"jquery-3.2.1.min.js", "index.js"
+		]
+	}]
+}
