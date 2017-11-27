@@ -1,0 +1,17 @@
+{
+    "name": "Pontomais Horas Faltantes",
+    "version": "1.0",
+    "description": "Veja as horas que faltam para o seu dia de trabalho.",
+    "browser_action": {
+      "default_icon": "img/twitter-logo-19.png",
+      "popup": "background.html"
+    },
+    "icons": {
+      "19" : "img/twitter-logo-19.png",
+      "48" : "img/twitter-logo-48.png",
+      "128" : "img/twitter-logo-128.png"
+    },
+    "permissions": [
+      "http://app.pontomaisweb.com.br/"
+    ]
+  } 
