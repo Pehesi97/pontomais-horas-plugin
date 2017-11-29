@@ -3,6 +3,9 @@
 	"manifest_version": 2,
 	"version": "1.0",
 	"description": "Veja as horas que faltam para o seu dia de trabalho.",
+	"browser_action": {
+		"default_icon": "./images/icon.png"
+	},
 	"content_scripts": [{
 		"matches": [
 			"https://app.pontomaisweb.com.br/*"
